@@ -14,6 +14,7 @@ header{
 }
 
 section {
+  
     margin-bottom: 30px;
 }
 
@@ -60,7 +61,7 @@ section {
     padding: 8px;
     margin: 10px;
     border-radius: 15px;
-    transition: 5s;
+   
 }
 
 #btndark {
@@ -83,12 +84,84 @@ section {
     padding: 8px;
     margin: 10px;
     border-radius: 15px;
-    transition: 0.3s;
     border: none;
 }
 
-.conteudo-option a :hover {
-    transform: scale(1.1 );
-    background-color: aqua;
+
+@media (max-width: 768px){
+
+    h1{
+       
+        color: #000000;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    p{
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .conteudo-text{
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .conteudo-primary{
+        align-items: center;
+    }
+    .conteudo-option a{
+        justify-content: center;
+    }
+
+    .rodape{
+       justify-content: center;
+       margin-right: 100px;
+    }
+    
+    #img{
+        height: auto;
+        align-items: center;
+        margin-right: 100px;
+    }
+
 }
 
+@media (max-width: 450px){
+
+    .conteudo-primary{
+        align-items: center;
+    }
+
+    .conteudo-text{
+        align-items: center;
+    }
+
+    .conteudo-option{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img{
+        width: 100%;
+        height: auto;
+    }
+
+     .btn-primary{
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn-dark{
+        width: 80%;
+        text-align: center;
+        background-color: red;
+    } 
+
+
+
+}
